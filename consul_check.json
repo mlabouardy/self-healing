@@ -1,0 +1,18 @@
+{
+  "checks" : [
+    {
+      "id" : "disk",
+      "name" : "Disk utilization",
+      "notes": "Critical = 95%, Warning = 80%",
+      "script" : "/consul/scripts/disk/disk_utilization.sh",
+      "interval" : "10s"
+    },
+    {
+      "id" : "memory",
+      "name" : "Memory consumption",
+      "notes": "Critical = 95%, Warning = 80%",
+      "script" : "/consul/scripts/memory/memory_consumption.sh",
+      "interval" : "10s"
+    }
+  ]
+}

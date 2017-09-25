@@ -1,0 +1,17 @@
+{
+  "datacenter" : "aws-us-east-1",
+  "node_name" : "staging",
+  "enable_script_checks" : true,
+  "watches" : [
+    {
+      "type" : "checks",
+      "state" : "warning",
+      "handler" : "/consul/scripts/manage_watches.sh"
+    },
+    {
+      "type" : "checks",
+      "state" : "critical",
+      "handler" : "/consul/scripts/manage_watches.sh"
+    }
+  ]
+}
